@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/SlidingPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:layout_width="150dp"
+        android:weightSum="5"
+        android:animateLayoutChanges="false">
+        <!-- Foto de perfil del usuario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#DED0B3"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutPerfil">
+            <ImageButton
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                app:srcCompat="@drawable/perfil"
+                android:filterTouchesWhenObscured="false"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="10dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/colorBlancoFoto"
+                android:cropToPadding="false"
+                android:id="@+id/imageViewHome" />
+
+            <TextView
+                android:text="Fermanchisman"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+        <!-- Create a post -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#FAB97F"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutCine">
+
+
+            <ImageView
+                app:srcCompat="@drawable/cine"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:filterTouchesWhenObscured="true"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageViewCine" />
+
+            <TextView
+                android:text="CINE"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorCreateAPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"/>
+        </LinearLayout>
+        <!-- Journal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#5A9DA3"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutPolitica">
+            <ImageView
+                android:src="@drawable/politica"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:filterTouchesWhenObscured="true"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageViewPolitica" />
+
+            <TextView
+                android:text="POLÍTICA"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorJournal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"/>
+        </LinearLayout>
+        <!-- Activity -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#F97D7F"
+            android:orientation="vertical"
+            android:id="@+id/linearLyoutMusica">
+            <ImageView
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:filterTouchesWhenObscured="true"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageViewMusica"
+                android:src="@drawable/musica"/>
+
+            <TextView
+                android:text="MÚSICA"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"/>
+        </LinearLayout>
+        <!-- People -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#B25570"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutVideojuegos">
+            <ImageView
+                app:srcCompat="@drawable/videojuegos"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:filterTouchesWhenObscured="true"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="10dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageViewVideojuegos" />
+
+            <TextView
+                android:text="VIDEOJUEGOS"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Vista donde se visualiza el "actionbar" y los post -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#101010"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorWhiteActionBar"
+            android:elevation="3dp">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/menu"
+                android:id="@+id/botonMenuLateral" />
+
+            <TextView
+                android:text="J O U R N A L"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="#928572"
+                android:paddingRight="20dp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+        <!-- Vista para los Post -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+
+            <ListView
+                android:id="@+id/listViewPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:divider="@color/colorWhite" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.SlidingPaneLayout>

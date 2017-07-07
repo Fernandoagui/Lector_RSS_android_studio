@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#928572</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteActionBar">#D7CCAE</color>
+    <color name="colorProfile">#797457</color>
+    <color name="colorCreateAPost">#B67741</color>
+    <color name="colorJournal">#2A6166</color>
+    <color name="colorActivity">#B34149</color>
+    <color name="colorPeople">#852D46</color>
+    <color name="colorHeartPost">#5C9FA5</color>
+    <color name="colorPencilPost">#B85A75</color>
+    <color name="colorStarPost">#F8B87B</color>
+    <color name="colorBlancoFoto">#FDF2DB</color>
+</resources>
